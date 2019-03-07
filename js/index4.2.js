@@ -46,7 +46,7 @@ books[4].getBookInfo ();
 
 
 // Узнать возраст книги
-books[0].__proto__.getAge = function() {
+LibraryBook.prototype.getAge = function() {
     var d = new Date().getFullYear();
     return  (d - this.year + " years old " + "book: " + this.bookTitle) ;
 }
